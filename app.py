@@ -57,6 +57,7 @@ def update(id):
             return redirect('/')
         except:
             return 'Issue updating task'
+        
     else:
         return render_template('update.html', task=task)
 
